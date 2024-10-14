@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/54da5a58ea159efa38000836/java
+
 const isDefined = <T>(tbd?: T): tbd is T => typeof tbd !== "undefined";
 const isOdd = (num: number) => num % 2;
 const getKeys = <O extends object>(obj: O) => Object.keys(obj) as (keyof O)[];
