@@ -9,7 +9,10 @@ const findTheOddInt = (arr: number[]) => {
         : 1;
   });
 
-  console.log(numberOfOccurences);
+  const i = Object.keys(numberOfOccurences).map((key) => {
+    const value = numberOfOccurences[key];
+    if (value % 2) return key;
+  });
 };
 
-console.log(findTheOddInt([7]));
+console.log(findTheOddInt([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]));
