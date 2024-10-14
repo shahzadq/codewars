@@ -16,6 +16,7 @@ const findTheOddInt = (arr: number[]) => {
     .map((key) => {
       const value = numberOfOccurences[key];
       if (value % 2) return key;
+      return undefined;
     })
     .filter(isDefined)[0];
 };
